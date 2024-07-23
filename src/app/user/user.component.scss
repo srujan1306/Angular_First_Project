@@ -1,6 +1,4 @@
 main {
-  width: 100%;
-  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,16 +7,15 @@ main {
   position: relative;
 }
 .main-con {
-  height: 100vh;
   display: grid;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.image {
-  height: 200px;
-  width: 200px;
-}
+// .image {
+//   height: 200px;
+//   width: 200px;
+// }
 .main-con img {
   object-fit: cover;
   height: 200px;
