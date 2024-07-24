@@ -2,11 +2,19 @@ import { Component, Input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UserComponent } from './user/user.component';
 import { CounterComponent } from './counter/counter.component';
+import { ColorGameComponent } from './color-game/color-game.component';
+import { ColorBoxComponent } from './color-box/color-box.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, UserComponent, CounterComponent],
+  imports: [
+    RouterOutlet,
+    UserComponent,
+    CounterComponent,
+    ColorGameComponent,
+    ColorBoxComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

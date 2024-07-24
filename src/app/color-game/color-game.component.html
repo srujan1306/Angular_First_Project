@@ -1,0 +1,14 @@
+<!-- <input type="text" [(ngModel)]="color" style="background-color: {{ color }}" /> -->
+
+<input type="text" [(ngModel)]="color" [style.background]="color" />
+<button (click)="colorchange()">Add Color</button>
+<p>{{ color }}</p>
+
+<!-- @if(value) {
+<div class="color-box" [style.background]="color"></div>
+}  -->
+
+@for ( box_color of colorList; track $index ) {
+
+<app-color-box [box_color]="box_color" />
+}

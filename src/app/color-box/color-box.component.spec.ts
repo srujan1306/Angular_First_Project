@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CounterComponent } from './counter.component';
+import { ColorBoxComponent } from './color-box.component';
 
-describe('CounterComponent', () => {
-  let component: CounterComponent;
-  let fixture: ComponentFixture<CounterComponent>;
+describe('ColorBoxComponent', () => {
+  let component: ColorBoxComponent;
+  let fixture: ComponentFixture<ColorBoxComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CounterComponent],
+      imports: [ColorBoxComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CounterComponent);
+    fixture = TestBed.createComponent(ColorBoxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
