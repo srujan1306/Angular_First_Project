@@ -1,9 +1,3 @@
-<app-user name="Srujan" />
-<app-user
-  name="Neha"
-  image="https://scx2.b-cdn.net/gfx/news/hires/2023/faces.jpg"
-/>
-<app-user
-  name="Phani"
-  image="https://images.nightcafe.studio//assets/man-in-suit.jpg?tr=w-1600,c-at_max"
-/>
+@for(Student of Students; track Student.id) {
+<app-user [name]="Student.name" [image]="Student.image" />
+}
